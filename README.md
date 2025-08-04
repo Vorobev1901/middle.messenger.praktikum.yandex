@@ -4,11 +4,38 @@
 
 ---
 
-## 📦 Установка
+### 📦 Установка
 
 ```bash
 npm install
 ```
 
-## Прототип
+###  Запуск dev сервера
+
+```bash
+npm run dev
+```
+
+###  Запуск сборки
+
+```bash
+npm run build
+```
+
+###  Запуск prod версии
+
+```bash
+npm run preview
+```
+
+###  Сборка и запуск prod версии
+
+```bash
+npm run start
+```
+
+## Figma
 - [Ссылка на Figma](https://www.figma.com/design/79K3qrL4gJwd5UJ9vNqDYq/Chat?node-id=0-1&p=f&t=YMvUbUQN5OBqh1Kr-0)
+
+## Netlify
+- [Ссылка на проект]()
