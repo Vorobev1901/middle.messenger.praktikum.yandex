@@ -1,7 +1,7 @@
 @use '@/styles/helpers' as *;
 
 .current-user-actions {
-  display:  flex;
+  display: flex;
   align-items: center;
   column-gap: 12px;
 
@@ -10,7 +10,7 @@
     @include square(36px);
 
     background-color: white;
-    transition: background-color 0.25s ;
+    transition: background-color 0.25s;
     border-radius: var(--border-radius-xs);
     border: var(--border);
     box-shadow: var(--shadow);
