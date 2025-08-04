@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "start": "npm run build && vite preview"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
