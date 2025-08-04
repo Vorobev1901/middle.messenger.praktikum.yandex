@@ -4,7 +4,10 @@ import {resolve} from 'path';
 
 export default defineConfig({
     server: {
-        port: 3000,
+        port: 3000
+    },
+    preview: {
+        port: 3000
     },
     resolve: {
         alias: {
@@ -23,7 +26,8 @@ export default defineConfig({
                 404: resolve(__dirname, 'src/404.html'),
                 500: resolve(__dirname, 'src/500.html')
             },
-        }
+        },
+        emptyOutDir: true,
     },
     plugins: [
         handlebars({
