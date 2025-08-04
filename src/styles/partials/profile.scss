@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  padding-block-start: 60px;
+  position: relative;
+
+  &__sidebar {
+    inline-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--color-gray-95);
+    border-right: 1px solid var(--color-gray-90);
+  }
+
+  &__content {
+    flex-grow: 1;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__username {
+    font-size: 20px;
+    color: var(--color-black-15);
+    font-weight: 500;
+  }
+}

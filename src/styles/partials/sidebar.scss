@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-direction:  column;
+  row-gap: 12px;
+  border-right: 1px solid var(--color-gray-90);
+  max-height: 100vh;
+
+  &__header {
+    padding-block-start: 22px;
+    display: flex;
+    flex-direction:  column;
+    row-gap: 22px;
+    padding-inline: 10px;
+  }
+
+  &__link {
+    margin-inline-start: auto;
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    color: var(--color-black-15);
+
+    &-icon {
+      display: flex;
+    }
+  }
+
+  &__content {
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,42 @@
+@use '@/styles/helpers' as *;
+
+.current-user {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  &__avatar-wrapper {
+    position: relative;
+    display: flex;
+  }
+
+  &__online-indicator {
+    --indicatorWidth: 8px;
+
+    @include square(var(--indicatorWidth));
+
+    position: absolute;
+    bottom: calc(var(--indicatorWidth));
+    right: 4px;
+    color: var(--color-green-45);
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: var(--color-black-15);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &__status {
+    color: var(--color-green-45);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

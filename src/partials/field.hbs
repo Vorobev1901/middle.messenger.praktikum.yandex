@@ -1,0 +1,22 @@
+<label class="field {{className}}">
+        <span class="field__label {{#if isLabelHidden}}visually-hidden{{/if}}">
+            {{label}}
+        </span>
+
+    <input
+            class="field__input"
+            type="{{type}}"
+            name="{{name}}"
+            autocomplete="{{autocomplete}}"
+            placeholder="{{placeholder}}"
+            value="{{value}}"
+            {{#if disabled}}
+                disabled
+            {{/if}}
+    >
+    {{#if error}}
+        <span class="field__error-text">
+            {{error}}
+        </span>
+    {{/if}}
+</label>

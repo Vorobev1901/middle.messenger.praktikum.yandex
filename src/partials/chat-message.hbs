@@ -1,0 +1,38 @@
+<div class="chat-message {{#if isMine}}is-mine{{/if}}">
+    {{#if text}}
+        <div class="chat-message__text">
+            <p>{{text}}</p>
+        </div>
+    {{/if}}
+
+    {{#if image}}
+    <img
+            class="chat-message__image"
+            src="{{image}}"
+            alt=""
+    >
+    {{/if}}
+
+
+    <div class="chat-message__info">
+        <span class="chat-message__time">{{time}}</span>
+    {{#if isMine}}
+        <span class="chat-message__status {{#if isSeen}}is-seen{{/if}}">
+            {{#if isSeen}}
+                <svg width="20" height="20" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4.48047L4.66665 12.2518L1.33331 8.71936" stroke="#13CB55" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.6667 7.30664L9.66669 12.6053L8.66669 11.5455" stroke="#13CB55" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            {{else}}
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4L4.66665 11.3333L1.33331 8" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.6667 6.6665L9.66669 11.6665L8.66669 10.6665" stroke="black" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            {{/if}}
+        </span>
+    {{/if}}
+    </div>
+</div>
