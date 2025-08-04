@@ -1,0 +1,125 @@
+{{#> main }}
+    <div class="profile">
+        <aside class="profile__sidebar">
+            <a class="profile__back-link" href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </a>
+        </aside>
+        <section class="profile__content" aria-labelledby="profile-title">
+            <h1 class="visually-hidden" id="profile-title">
+                Профиль пользователя
+            </h1>
+            {{#with profile }}
+                {{> avatar }}
+                <h2 class="profile__username">
+                    {{this.first_name}} {{this.second_name}}
+                </h2>
+                {{#> form titleId="update-profile-title" }}
+                    <h2 class="visually-hidden" id="update-profile-title">
+                        Обновить данные профиля
+                    </h2>
+                    {{> field
+                            label="Почта"
+                            type="email"
+                            name="email"
+                            value=this.email
+                            placeholder="Введите почту"
+                            autocomplete="email"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Логин"
+                            type="text"
+                            name="login"
+                            value=this.login
+                            placeholder="Введите логин"
+                            autocomplete="username"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Имя"
+                            type="text"
+                            name="first_name"
+                            value=this.first_name
+                            placeholder="Введите имя"
+                            autocomplete="given-name"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Фамилия"
+                            type="text"
+                            name="second_name"
+                            value=this.second_name
+                            placeholder="Введите фамилию"
+                            autocomplete="family-name"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Телефон"
+                            type="tel"
+                            name="phone"
+                            value=this.phone
+                            placeholder="+7 (___) ___-__-__"
+                            autocomplete="tel"
+                            disabled=true
+                    }}
+
+                    {{> button
+                            text="Изменить данные"
+                            type="submit"
+                            isDisabled=""
+                    }}
+
+                {{/form}}
+
+                {{#> form titleId="update-password-title"}}
+
+                    <h2 class="visually-hidden" id="update-password-title">
+                        Обновить пароль
+                    </h2>
+
+                    {{> field
+                            label="Старый пароль"
+                            type="password"
+                            name="oldPassword"
+                            placeholder="Старый пароль"
+                            autocomplete="old-password"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Новый пароль"
+                            type="password"
+                            name="newPassword"
+                            placeholder="Введите пароль"
+                            autocomplete="new-password"
+                            disabled=true
+                    }}
+
+                    {{> field
+                            label="Повторите новый пароль"
+                            type="password"
+                            name="confirm-password"
+                            placeholder="Повторите пароль"
+                            autocomplete="new-password"
+                            disabled=true
+                    }}
+
+                    {{> button
+                            text="Изменить пароль"
+                            type="submit"
+                            isDisabled=""
+                    }}
+                {{/form}}
+            {{/with}}
+            <div>
+                <a href="./index.html">Выйти из аккаунта</a>
+            </div>
+
+        </section>
+    </div>
+{{/main}}

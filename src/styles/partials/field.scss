@@ -1,0 +1,44 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  inline-size: 100%;
+
+  &__label {
+    color: var(--color-black-15);
+  }
+
+  &__input {
+    background-color: white;
+    border: var(--border);
+    color: var(--color-black-15);
+    block-size: 36px;
+    border-radius: var(--border-radius-xs);
+    padding-inline: 12px;
+    inline-size: 100%;
+    box-shadow: var(--shadow);
+
+    &:disabled {
+      background-color: var(--color-gray-95);
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      border: 1px solid var(--color-black-15);
+    }
+
+    &.error {
+      border: 1px solid #FB2C36;
+    }
+
+    &::placeholder {
+      color: var(--color-gray-55);
+    }
+  }
+
+  &__error-text {
+    color: #FB2C36;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,27 @@
+.dialog {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  max-block-size: 100vh;
+
+  &__header,
+  &__content,
+  &__footer {
+    padding-inline: 16px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 70px;
+    flex:none;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__content {
+    padding-block: 30px;
+    margin-block-start: auto;
+    overflow-y: auto;
+  }
+}

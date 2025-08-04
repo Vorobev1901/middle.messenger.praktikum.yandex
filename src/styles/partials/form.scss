@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  max-inline-size: 480px;
+  inline-size: 100%;
+  margin-inline: auto;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-gray-90);
+  border-radius: var(--border-radius-l);
+  align-items: center;
+}

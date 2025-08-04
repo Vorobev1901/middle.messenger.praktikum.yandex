@@ -1,0 +1,55 @@
+<a
+        class="chat-user {{#if isActive}}is-active{{/if}}"
+        href="/{{id}}"
+>
+    <div class="chat-user__avatar">
+        <img
+                class="chat-user__avatar-image"
+                src="{{avatarUrl}}"
+                alt="{{name}}"
+                width="48"
+                height="48"
+                loading="lazy"
+        />
+        {{#if isOnline}}
+            <span class="chat-user__online-indicator">
+            <svg width="8" height="9" viewBox="0 0 8 9" fill="none">
+                <ellipse cx="4" cy="4.23889" rx="4" ry="4.23889" fill="#05DF72"/>
+            </svg>
+        </span>
+        {{/if}}
+    </div>
+    <div class="chat-user__content">
+        <span class="chat-user__name">{{name}}</span>
+        <div class="chat-user__message">
+            <span class="chat-user__message-status {{#if isSeen}}is-seen{{/if}}">
+                {{#if isSeen}}
+                    <svg width="20" height="20" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4.48047L4.66665 12.2518L1.33331 8.71936" stroke="#13CB55" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M14.6667 7.30664L9.66669 12.6053L8.66669 11.5455" stroke="#13CB55" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                {{else}}
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3334 4L6.00002 11.3333L2.66669 8" stroke="#7A7A7A" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                {{/if}}
+            </span>
+            <div class="chat-user__message-text">
+                <p>
+                    {{lastMessage}}
+                </p>
+            </div>
+        </div>
+        <span class="chat-user__message-time">
+            {{lastMessageTime}}
+        </span>
+        {{#if unreadCount}}
+            <span class="chat-user__unread-count">
+                {{unreadCount}}
+            </span>
+        {{/if}}
+    </div>
+</a>
