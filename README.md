@@ -38,4 +38,12 @@ npm run start
 - [Ссылка на Figma](https://www.figma.com/design/79K3qrL4gJwd5UJ9vNqDYq/Chat?node-id=0-1&p=f&t=YMvUbUQN5OBqh1Kr-0)
 
 ## Netlify
-- [Ссылка на проект]()
+- [Ссылка на проект](https://chat-messenger-1.netlify.app/)
+
+##  Страницы
+- [chat](https://chat-messenger-1.netlify.app/)
+- [login](https://chat-messenger-1.netlify.app/login)
+- [register](https://chat-messenger-1.netlify.app/register)
+- [404](https://chat-messenger-1.netlify.app/404)
+- [500](https://chat-messenger-1.netlify.app/500)
+- [profile](https://chat-messenger-1.netlify.app/profile)
