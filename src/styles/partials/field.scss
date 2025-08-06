@@ -28,7 +28,7 @@
     }
 
     &.error {
-      border: 1px solid #FB2C36;
+      border: 1px solid #fb2c36;
     }
 
     &::placeholder {
@@ -37,8 +37,8 @@
   }
 
   &__error-text {
-    color: #FB2C36;
-    font-size: 16px;
-    line-height: 16px;
+    color: #fb2c36;
+    font-size: 12px;
+    line-height: 12px;
   }
 }

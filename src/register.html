@@ -1,81 +1,31 @@
 {{#>main}}
     {{#> form titleId="register-title" }}
-
-        {{> heading
-                title="Регистрация"
-                id="register-title"
-        }}
-
-        {{> description
-                text="Введите данные для создания новой учётной записи"
-        }}
-
-        {{> field
-                label="Почта"
-                type="email"
-                name="email"
-                placeholder="Введите почту"
-                autocomplete="email"
-        }}
-
-        {{> field
-                label="Логин"
-                type="text"
-                name="login"
-                placeholder="Введите логин"
-                autocomplete="username"
-        }}
-
-        {{> field
-                label="Имя"
-                type="text"
-                name="first_name"
-                placeholder="Введите имя"
-                autocomplete="given-name"
-        }}
-
-        {{> field
-                label="Фамилия"
-                type="text"
-                name="second_name"
-                placeholder="Введите фамилию"
-                autocomplete="family-name"
-        }}
-
+        {{> heading title="Регистрация"
+                id="register-title" }}
+        {{> description text="Введите данные для создания новой
+учётной записи" }}
+        {{> field label="Почта" type="email" name="email"
+                placeholder="Введите почту" autocomplete="email" }}
+        {{> field label="Логин"
+                type="text" name="login" placeholder="Введите логин" autocomplete="username" }}
+        {{> field label="Имя" type="text" name="first_name" placeholder="Введите имя"
+                autocomplete="given-name" }} {{> field label="Фамилия" type="text"
+                name="second_name" placeholder="Введите фамилию" autocomplete="family-name" }}
         {{> field
                 label="Телефон"
-                type="tel"
-                name="phone"
-                placeholder="+7 (___) ___-__-__"
-                autocomplete="tel"
+                type="tel" name="phone"
+                placeholder="+7 (___)
+                ___-__-__" autocomplete="tel"
         }}
 
-        {{> field
-                label="Пароль"
-                type="password"
-                name="password"
-                placeholder="Введите пароль"
-                autocomplete="new-password"
-        }}
-
-        {{> field
-                label="Пароль (еще раз)"
-                type="password"
-                name="confirm-password"
-                placeholder="Повторите пароль"
-                autocomplete="new-password"
-        }}
-
+        {{> field label="Пароль" type="password"
+                name="password" placeholder="Введите пароль" autocomplete="new-password" }}
+        {{>
+        field label="Пароль (еще раз)" type="password" name="confirm-password"
+                placeholder="Повторите пароль" autocomplete="new-password" }}
         {{> button
-                text="Зарегистрироваться"
-                type="submit"
-                isDisabled=""
-        }}
-
-        {{> link
-                label="Есть аккаунт?"
-                href="./login.html"
-        }}
-
+                text="Зарегистрироваться" type="submit" isDisabled="" }}
+        {{> link label="Есть
+аккаунт?" href="./login.html" }}
     {{/form}}
 {{/main}}

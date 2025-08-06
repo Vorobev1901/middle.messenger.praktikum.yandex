@@ -1,14 +1,14 @@
-@use '@/styles/helpers' as *;
+@use "@/styles/helpers" as *;
 
 .send-form {
   position: relative;
 
   &__actions-button,
-  &__button{
+  &__button {
     @include flex-center;
     @include square(36px);
     background-color: var(--color-white);
-    transition: background-color var(--transition-duration) ;
+    transition: background-color var(--transition-duration);
     border-radius: var(--border-radius-xs);
 
     &:hover {
@@ -23,6 +23,7 @@
     right: calc(12px + 36px + 12px);
     top: 50%;
     transform: translateY(-50%);
+
     &-button {
       border: none;
     }

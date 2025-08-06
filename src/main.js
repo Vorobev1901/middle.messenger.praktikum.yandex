@@ -1,1 +1,1 @@
-import './styles/index.js';
+import "./styles/index.js";

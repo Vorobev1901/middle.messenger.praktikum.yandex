@@ -1,41 +1,12 @@
 {{#> main title="login"}}
     {{#> form titleId="login-title" }}
         {{> heading
-                title="Вход"
-                id="login-title"
-        }}
-
-        {{> description
-                text="Введите свои учетные данные для доступа к вашей учетной записи"
-        }}
-
-        {{> field
-                label="Логин"
-                type="text"
-                name="login"
-                placeholder="Введите логин"
-                autocomplete="username"
-        }}
-
-        {{> field
-                label="Пароль"
-                type="password"
-                name="password"
-                placeholder="Введите пароль"
-                autocomplete="current-password"
-                error="Неверный пароль"
-        }}
-
-        {{> button
-                text="Авторизоваться"
-                type="submit"
-                isDisabled=""
-        }}
-
-        {{> link
-                label="Нет аккаунта?"
-                href="./register.html"
-        }}
-    {{/form}}
-{{/main}}
-
+                title="Вход" id="login-title" }}
+        {{> description text="Введите свои учетные
+данные для доступа к вашей учетной записи" }}
+        {{> field label="Логин"
+                type="text" name="login" placeholder="Введите логин" autocomplete="username" }}
+        {{> field label="Пароль" type="password" name="password"
+                placeholder="Введите пароль" autocomplete="current-password" error="Неверный пароль" }} {{> button
+                text="Авторизоваться" type="submit" isDisabled="" }} {{> link label="Нет
+аккаунта?" href="./register.html" }} {{/form}} {{/main}}

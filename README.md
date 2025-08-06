@@ -10,37 +10,40 @@
 npm install
 ```
 
-###  Запуск dev сервера
+### Запуск dev сервера
 
 ```bash
 npm run dev
 ```
 
-###  Запуск сборки
+### Запуск сборки
 
 ```bash
 npm run build
 ```
 
-###  Запуск prod версии
+### Запуск prod версии
 
 ```bash
 npm run preview
 ```
 
-###  Сборка и запуск prod версии
+### Сборка и запуск prod версии
 
 ```bash
 npm run start
 ```
 
 ## Figma
+
 - [Ссылка на Figma](https://www.figma.com/design/79K3qrL4gJwd5UJ9vNqDYq/Chat?node-id=0-1&p=f&t=YMvUbUQN5OBqh1Kr-0)
 
 ## Netlify
+
 - [Ссылка на проект](https://chat-messenger-1.netlify.app/)
 
-##  Страницы
+## Страницы
+
 - [chat](https://chat-messenger-1.netlify.app/)
 - [login](https://chat-messenger-1.netlify.app/login)
 - [register](https://chat-messenger-1.netlify.app/register)

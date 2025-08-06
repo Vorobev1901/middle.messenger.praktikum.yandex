@@ -1,6 +1,6 @@
 .sidebar {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   row-gap: 12px;
   border-right: 1px solid var(--color-gray-90);
   max-height: 100vh;
@@ -8,7 +8,7 @@
   &__header {
     padding-block-start: 22px;
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     row-gap: 22px;
     padding-inline: 10px;
   }

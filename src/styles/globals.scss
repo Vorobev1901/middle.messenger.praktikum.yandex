@@ -18,46 +18,58 @@ main {
   flex: 1;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   color: var(--color-black-15);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   @include fluid-text(58, 28);
 
   font-weight: 700;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   @include fluid-text(48, 24);
 
   font-weight: 700;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   @include fluid-text(38, 20);
 
   font-weight: 700;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   @include fluid-text(24, 20);
 
   font-weight: 500;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   @include fluid-text(22, 18);
 
   font-weight: 500;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   @include fluid-text(20, 16);
 
   font-weight: 600;

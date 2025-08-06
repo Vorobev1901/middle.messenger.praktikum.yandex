@@ -1,5 +1,5 @@
-@use 'constants' as *;
-@use 'sass:math';
+@use "constants" as *;
+@use "sass:math";
 
 @function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
   $maxViewportWidth: $container-desktop-width;
