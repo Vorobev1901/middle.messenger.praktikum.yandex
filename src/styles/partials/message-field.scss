@@ -1,0 +1,18 @@
+.message-field {
+  &__input {
+    inline-size: 100%;
+    color: var(--color-black-15);
+    font-size: 16px;
+    line-height: 16px;
+    padding-inline: 12px;
+    border: 1px solid var(--color-gray-90);
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--shadow);
+    block-size: 56px;
+    margin-block-end: auto;
+  }
+
+  &::placeholder {
+    color: var(--color-gray-55);
+  }
+}

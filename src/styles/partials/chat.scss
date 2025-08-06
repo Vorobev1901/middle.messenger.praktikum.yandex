@@ -1,0 +1,14 @@
+.chat {
+  display: flex;
+  min-height: 100vh;
+
+  &__sidebar {
+    max-inline-size: 420px;
+    inline-size: 100%;
+  }
+
+  .chat__dialog {
+    inline-size: 100%;
+    flex-grow: 1;
+  }
+}
