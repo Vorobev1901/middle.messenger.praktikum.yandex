@@ -1,0 +1,13 @@
+.button {
+  background-color: var(--color-black-15);
+  border-radius: var(--border-radius-xs);
+  block-size: 36px;
+  color: var(--color-white);
+  border: none;
+  inline-size: 100%;
+  transition: background-color var(--transition-duration);
+
+  &:hover {
+    background-color: var(--color-black-30);
+  }
+}

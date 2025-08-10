@@ -1,0 +1,14 @@
+<div class="messages">
+    {{#each messages}}
+        <div class="messages__date">
+            {{date}}
+        </div>
+        <ul class="messages__list">
+            {{#each items}}
+                <li class="messages__list-item">
+                    {{> chat-message }}
+                </li>
+            {{/each}}
+        </ul>
+    {{/each}}
+</div>

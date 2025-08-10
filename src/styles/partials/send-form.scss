@@ -1,0 +1,40 @@
+@use "@/styles/helpers" as *;
+
+.send-form {
+  position: relative;
+
+  &__actions-button,
+  &__button {
+    @include flex-center;
+    @include square(36px);
+    background-color: var(--color-white);
+    transition: background-color var(--transition-duration);
+    border-radius: var(--border-radius-xs);
+
+    &:hover {
+      background-color: var(--color-gray-90);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    right: calc(12px + 36px + 12px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    &-button {
+      border: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--color-gray-90);
+    box-shadow: var(--shadow);
+  }
+}
