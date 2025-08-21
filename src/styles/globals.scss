@@ -8,10 +8,11 @@ body {
   @include fluid-text(14, 12);
 
   display: flex;
+  font-size: 12px;
   flex-direction: column;
   font-family: var(--font-family-base), monospace;
   color: var(--color-black-15);
-  background-color: var(--color-white);
+  background-color: var(--color-gray-15);
 }
 
 main {
@@ -30,6 +31,7 @@ h5,
 .h5,
 h6,
 .h6 {
+  //font-family: "JetBrains Mono", monospace;
   color: var(--color-black-15);
 }
 
@@ -57,8 +59,7 @@ h3,
 h4,
 .h4 {
   @include fluid-text(24, 20);
-
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h5,

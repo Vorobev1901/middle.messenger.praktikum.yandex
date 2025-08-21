@@ -1,52 +1,11 @@
-{{#> main title="chat"}}
-<div class="chat" aria-labelledby="chat-title">
-  <h1 class="visually-hidden" id="chat-title">Чат</h1>
-  <aside class="chat__sidebar sidebar">
-    <header class="sidebar__header">
-      <a class="sidebar__link" href="./profile.html">
-        <span class="sidebar__link-text"> Профиль </span>
-        <span class="sidebar__link-icon">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 12L10 8L6 4"
-              stroke="#999999"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </span>
-      </a>
-      {{> field
-              label="Поиск чата"
-              type="text"
-              name="search"
-              placeholder="Поиск чата"
-              autocomplete="off"
-              isLabelHidden=true
-      }}
-    </header>
-    <div class="sidebar__content">
-      <ul class="chat-list">
-        {{#each users}}
-        <li class="chat-list__item">{{> chat-user }}</li>
-        {{/each}}
-      </ul>
-    </div>
-  </aside>
-  <section class="chat__dialog dialog">
-    <header class="dialog__header">
-      {{> current-user }} {{> current-user-actions }}
-    </header>
-    <div class="dialog__content">{{> messages }}</div>
-
-    <footer class="dialog__footer">{{> send-form }}</footer>
-  </section>
-</div>
-{{/main}}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Messenger</title>
+    <script type="module" src="./index.ts"></script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>
