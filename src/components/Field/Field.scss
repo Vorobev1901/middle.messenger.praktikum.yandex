@@ -1,0 +1,45 @@
+.field {
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  row-gap: 6px;
+  inline-size: 100%;
+
+  &__label {
+    color: var(--color-black-15);
+  }
+
+  &__input {
+    background-color: white;
+    border: var(--border);
+    color: var(--color-black-15);
+    block-size: 32px;
+    border-radius: 22px;
+    padding-inline: 12px;
+    inline-size: 100%;
+    box-shadow: var(--shadow);
+
+    &:disabled {
+      background-color: var(--color-gray-95);
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      border: 1px solid var(--color-black-15);
+    }
+
+    &.error {
+      border: 1px solid #fb2c36;
+    }
+
+    &::placeholder {
+      color: var(--color-gray-55);
+    }
+  }
+
+  &__error-text {
+    color: #fb2c36;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

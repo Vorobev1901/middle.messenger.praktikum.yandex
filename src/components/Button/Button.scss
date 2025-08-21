@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--color-blue-45);
+  border-radius: 22px;
+  block-size: fluid(32, 28);
+  color: var(--color-white);
+  border: none;
+  inline-size: 100%;
+  transition: background-color var(--transition-duration);
+  max-inline-size: 290px;
+
+  &:hover {
+    background: var(--color-blue-60);
+  }
+}

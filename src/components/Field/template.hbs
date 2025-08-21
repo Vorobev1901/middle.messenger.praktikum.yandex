@@ -1,0 +1,20 @@
+<div class="field {{className}}">
+    {{#if label}}
+        <label class="field__label" for="{{name}}">{{label}}</label>
+    {{/if}}
+
+    <input
+            class="field__input"
+            id="{{name}}"
+            name="{{name}}"
+            type="{{type}}"
+            value="{{value}}"
+            placeholder="{{placeholder}}"
+            autocomplete="{{autocomplete}}"
+            {{#if disabled}}disabled{{/if}}
+    />
+
+    {{#if error}}
+        <span class="field__error">{{error}}</span>
+    {{/if}}
+</div>
